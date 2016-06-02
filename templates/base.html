@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for file in files %}
+        {% for paragraph in file.paragraphs %}
+            <pre>{{ paragraph.text | safe }}</pre>
+            <pre>{{ paragraph.msg  | safe }}</pre>
+        {% endfor %}
+    {% endfor %}
+</body>
+</html>
