@@ -6,6 +6,8 @@
 </head>
 <body>
     {% for file in files %}
+    <hr size="10" noshade>
+    <h2><pre>{{ file.name }}</pre></h2>
         {% for paragraph in file.paragraphs %}
             <pre>{{ paragraph.text | safe }}</pre>
             <pre>{{ paragraph.msg  | safe }}</pre>
