@@ -13,7 +13,7 @@ setup(
     description="",
     install_requires=["jinja2", "pypandoc"],
     scripts=["bin/airship-convert"],
-    package_data={"": ["templates/*"]},
+    package_data={"": ["templates/markdown/*"]},
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Console",
