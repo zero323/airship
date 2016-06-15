@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 from airship_convert import __author__, __version__
 
 setup(
-    name="airship-convert",
+    name="airship_convert",
     version=__version__,
-    packages=["airship_convert"],
+    packages=find_packages("."),
     url="",
     license="MIT",
     author=__author__,

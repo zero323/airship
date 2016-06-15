@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import print_function, division, absolute_import
-import argparse
+import json
 
-from airship_convert import main
 
-if __name__ == "__main__":
-    main()
+def parse(path):
+    with open(path) as fr:
+        return json.load(fr)
