@@ -1,0 +1,14 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from __future__ import print_function, division, absolute_import
+import argparse
+
+from airship_convert import main
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--path", required=True)
+    parser.add_argument("--out", default="out.html")
+    args = parser.parse_args()
+    main(args.path, args.out)
